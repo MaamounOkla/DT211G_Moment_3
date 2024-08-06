@@ -1,0 +1,94 @@
+//imports
+@use "base";
+@use "mixins" as c;
+
+//nav-styling
+nav {
+  background-color: base.$secondary-color;
+  width: 100%;
+  height: 10vh;
+  @include c.flex-center;
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        color: base.$primary-color;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Styling för hamburgermeny
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: base.$secondary-color;
+    margin: 5px 0;
+
+    transition: all 0.3s;
+  }
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+//Mindre skärmar (mobil)
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  //visa menyn vid toggle
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    
+    background-color: base.$secondary-color;
+    position: absolute;
+    top: 50px;
+    opacity: 0.96;
+    right: 0;
+     height: fit-content;
+    width: fit-content;
+    padding: 1rem 4rem;
+     
+    @include c.flex-left-vertical;
+   
+    ul {
+      @include c.flex-left-vertical;
+      padding: 0;
+    }
+    li {
+      text-align: center;
+
+      padding: 0.5rem 0;
+    }
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}

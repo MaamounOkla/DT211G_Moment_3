@@ -1,0 +1,239 @@
+nav {
+  background-color: #204893;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  justify-content: center;
+  padding: 1rem 2rem;
+  display: flex;
+}
+
+nav ul li a {
+  color: #badef8;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  padding: .5rem;
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu-toggle span {
+  background-color: #204893;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all .3s;
+  display: block;
+}
+
+.nav {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (width <= 768px) {
+  main {
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    opacity: .96;
+    background-color: #204893;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem 4rem;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .nav li {
+    text-align: center;
+    padding: .5rem 0;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
+
+.personal-information {
+  margin: 1rem 0;
+}
+
+.report {
+  width: 100%;
+  padding-bottom: 10rem;
+}
+
+.report ul li, .report ol li {
+  padding: .6rem .2rem;
+}
+
+.report ol, .report ul {
+  padding: 1rem;
+}
+
+.report pre, .report span {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #d0f3ff;
+  margin: 1rem 0;
+  padding: .4rem;
+  overflow: auto;
+}
+
+.report span {
+  width: fit-content;
+  padding: .1rem .2rem;
+  line-height: 2rem;
+}
+
+.report ul li {
+  list-style: disc;
+}
+
+.report h1, .report body h3, body .report h3 {
+  margin: 2rem 0;
+}
+
+.report h2, .report h3 {
+  margin: 1rem 0;
+}
+
+@media screen and (width <= 768px) {
+  pre, .report span {
+    margin: 0;
+    padding: .4rem;
+  }
+}
+
+img {
+  object-fit: cover;
+  border: 1px solid #3d3d3d;
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  padding: .3rem;
+  display: block;
+}
+
+.footer {
+  background: #204893;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  display: flex;
+}
+
+.footer-info {
+  color: #badef8;
+}
+
+body {
+  background-color: #5db2ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (width >= 768px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+body {
+  color: #1e1616;
+  font-family: Arial, sans-serif;
+}
+
+body header {
+  text-align: center;
+}
+
+body h1, body h3 {
+  color: #204893;
+}
+
+body h3 {
+  margin: 0 0 2rem;
+}
+
+body p {
+  color: #3d3d3d;
+  margin-bottom: 20px;
+}
+
+main {
+  background: #fff;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 4rem;
+  display: flex;
+  box-shadow: 0 0 5rem #a3a3a3;
+}
+
+.title {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+}
+
+@media screen and (width <= 768px) {
+  main {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=index.49c9a8a6.css.map */

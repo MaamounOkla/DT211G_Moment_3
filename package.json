@@ -1,0 +1,16 @@
+{
+  "name": "dt211g_moment_3",
+  "version": "1.0.0",
+  "description": "En automatiserad arbetsmiljö för parcel och sass",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "Maamoun Okla",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}
